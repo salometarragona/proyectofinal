@@ -1,0 +1,454 @@
+
+body{
+    background-color: rgb(228, 255, 165);
+}
+.navegacion{
+    background-color: rgb(9, 138, 170);
+}
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+  .articulo {
+    padding: 8px;
+    font-size: 12px;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 37, 255) ;
+  }
+
+  .articulo img {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto; 
+  }
+
+.articulo:hover{
+    background-color: rgb(164, 232, 255);
+    cursor: pointer;
+    color: black;
+    border: 5px dashed rgb(255, 97, 123);
+    box-shadow: 0px 0px 0px 2px rgb(255, 29, 67) ;
+
+}
+
+.h2,.p{
+    display: flex;
+justify-content: center;
+}
+
+.pie{
+    background-image: url(../IMAGENES/pie.png);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconos{
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-start;
+}
+.redes{
+    margin-top: 30px;
+    padding-top: 10px;
+
+}
+.personajes{
+    color: palegreen;
+    font-size: 20px;
+    margin:auto
+}
+.consejos{
+    color: palegreen;
+    font-size: 20px;
+}
+.contacto{
+    color: palegreen;
+    font-size: 20px;
+}
+.contdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div{
+    background-color: rgb(148, 72, 42);
+    color: white;
+    border: 1px solid black;
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+  
+}
+.div {
+    display: inline-block;
+    animation: bounce 2s
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+@keyframes slide {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+.titulo-pers {
+        animation: slide 0.8s ease-out;
+}
+@keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .subtitulo-pers{
+    animation: zoomIn 0.8s ease-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .rutas{
+    animation: fadeIn 1s ease-in;
+  }
+  
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+  .consecuencias{
+    animation: bounce 2s ease infinite;
+    margin-top: 30px;
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+.titulocontacto{
+    animation: slide 1s ease-out;
+    color: rgb(187, 59, 187);
+}
+.elementopadre{
+    background-image: url("../IMAGENES/header2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+.inicio,.consejos,.contacto,.personajes{
+color: black;
+font-style: italic;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 150%;
+display: flex;
+margin: auto;
+padding: 5px;
+background-color: rgb(229, 255, 79);
+border: 2px solid green;
+border-radius: 5px;
+    }
+.elementoparrafo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+.parrafo1{ 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+.videoyoutube{
+    position: relative;
+            width: 100%;
+            max-width: 600px; 
+            margin: auto;
+}
+.videoyoutube iframe{
+    width: 100%;
+            height: 450px; 
+            border: none;
+}
+ .calendario{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+ }
+.habilidades2{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+    .titulo-pers{
+        background-color: rgb(117, 221, 255);
+        padding: 10px;
+    }
+.titulo-pers, .subtitulo-pers{
+    color: rgb(255, 103, 129);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+    .p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: teal;
+        text-decoration: underline;
+    }
+    
+    .h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: teal
+    }
+.descripcion,.cumple,.casamiento,.regalos{
+    font-family: Arial, Helvetica, sans-serif
+}
+.mas,.plataformas,.requerimientos,.estaciones, .habilidades{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: seagreen;
+}
+
+.parrafo2, .lista, .req, .parrafo3, .parrafo4, .parrafo5{
+    list-style-position: inside;
+    font-family: Arial, Helvetica, sans-serif;
+ text-align: center;
+ font-size: 18px;
+ padding: 20px;
+
+}
+.parrafo5{
+    font-weight:  bold;
+}
+ .lista2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.cultivo, .recoleccion, .pesca, .combate, .mineria, .parrafo4{
+padding: 20px;
+margin-left: 20px;
+margin-right: 20px;
+
+}
+
+.aldeanos{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.rutas{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(172, 172, 24)
+}
+.pconsejos1, .pconsejos2, .pconsejos3, .pconsejos4, .pconsejos5{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    font-size: 18px;
+}
+.contieneimagenes{
+    text-align: center;
+}
+.mercajoja, .centro{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
+.contieneimagenes2{
+    justify-content: center;
+}
+.lotes, .preciosjoja{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
+.consecuencias{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(172, 172, 24)
+}
+.contenedorrecuadro{
+    display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 10px; 
+}
+.recuadro {
+    border: 2px solid #006e00; 
+    background-color: #bdffd1; 
+    padding: 15px; 
+    margin: 15px 0; 
+    border-radius: 8px; 
+    width: 80%; 
+}
+.formulario-elegante {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.formulario-elegante input[type="text"],
+.formulario-elegante textarea,
+.formulario-elegante select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.formulario-elegante textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-elegante input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-elegante input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.titulocontacto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 767px){
+    .secciones {
+        display: grid ;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .articulo {
+        padding: 12px; 
+        font-size: 15px; 
+    }
+    .articulo img {
+        max-width: 100%; 
+        height: auto;
+    }
+    .calendario{
+    max-width: 40%;
+    height: auto;
+    }    
+    .habilidades2{
+        max-width: 40%;
+        height: auto;
+    }
+    .elementopadre{
+        display: flex;
+        flex-direction:row
+    }
+
+    .contdiv, .div{
+        display: flex;
+        flex-direction: row;
+        padding: auto;
+        margin-top: 30px
+    }
+    .videoyoutube iframe{
+        height: 250px;
+    }
+    .mercajoja, .centro{
+        width: 100%;
+        margin: 0 2px;
+    }
+    .lotes, .preciosjoja{
+        width: 100%;
+        margin: 0 2px;
+    }
+}
+    @media (min-width: 992px){
+        .parrafo1{
+            display: flex;
+            flex-direction: row;
+        }
+        .secciones {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px; 
+        }
+        .articulo {
+            padding: 15px; 
+            font-size: 16px; 
+        }
+        .mercajoja, .centro{
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+         margin: 0 2%;
+        }
+        .contieneimagenes2{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
+        .lotes, .preciosjoja{
+        width: 45%;
+        height: auto;
+      
+        }
+    }

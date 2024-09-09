@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<header>
+    <nav class="navegacion"> 
+      <ul class="elementopadre"> 
+      <li class="inicio"> <a href="../index.html"> Inicio</a></li>
+       <li class="personajes"><a href="../PAGINAS/personajes.html"> Personajes </a> </li>
+       <li class="consejos"><a href="../PAGINAS/consejos.html"> Consejos </a></li>
+       <li class="contacto"><a href="../PAGINAS/contacto.html"> Contacto </a></li>
+      </ul>
+    </nav>
+    </header>
+<body>
+<h1 class="titulocontacto"> ¿Te quedaron preguntas o querés comentarnos algo del juego? </h1>
+
+    <main> 
+    <form action="#" method="get" class="formulario-elegante" onsubmit="return validarFormulario()">
+        <input type="text" placeholder="Nombre" class="mario" id="nombre">
+        <input type="text" placeholder="Apellido" class="bros" id="apellido">
+        <textarea placeholder="Deje su pregunta o comentario aquí" class="nintendo" id="comentario"></textarea>
+        <select id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Chile">Chile</option>
+        </select>
+        <input type="submit" value="Enviar">
+        <p id="mensaje-error" style="color: red; display: none;">Por favor, rellena todos los campos.</p>
+    </form>
+</main>
+
+    <footer class="pie"> 
+        <p class="redes"> ¡Seguí las redes sociales de ConcernedApe para mas información!</p>
+    
+        <a href="https://x.com/ConcernedApe?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> 
+        <img class="twitter" src="../IMAGENES/x.png" alt="X" width="50px" height="50px"> </a>
+    
+        <a href="https://www.instagram.com/gluten_puck/?hl=es" target="_blank"> 
+        <img class="ig" src="../IMAGENES/ig.png" alt="Instagram" width="50px" height="50px"> </a>
+        <p class="derechos"> Todos los derechos reservados. 2024. </p>
+    
+      </footer>
+
+      <script src="../JAVASCRIPT/script.js"></script>
+</body>
+</html>
